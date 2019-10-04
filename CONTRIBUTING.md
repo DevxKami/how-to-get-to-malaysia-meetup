@@ -16,6 +16,7 @@ Optional fields in `details.yaml` file are:
 - `googleMapUrl`
 - `lrt` (this is a list of `description` and `photo`. `photo` is optional)
 - `driving` (this is a list of `description` and `photo`. `photo` is optional)
+- `grab` (this is a list of `description` and `photo`. `photo` is optional)
 
 ## Code Enhancement
 

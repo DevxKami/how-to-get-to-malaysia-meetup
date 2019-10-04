@@ -34,15 +34,28 @@
       photo: '../fave/12-taking-the-small-path.jpg'
     - description: 'At the end of the path, you will see a small pond.'
       photo: '../fave/13-see-the-lake-after-go-up-small-path.jpg'
-    - description: 'Turning slightly anticlockwise, you will see where you want to go across the lake. Walk around the lake. Don''t jump into the lake unless you want to attract the attention of the good-looking guy/gal that is passing by.'
+    - description: "Turning slightly anticlockwise, you will see where you want to go across the lake. Walk around the lake. Don't jump into the lake unless you want to attract the attention of the good-looking guy/gal that is passing by."
       photo: './14-see-target-across-lake.jpg'
     - description: 'When you approaches the building, a roundabout will be in front the entrance. Go towards the entrance next to Botanica Deli.'
       photo: './15-approaching-building.jpg'
     - description: 'Walk through the entrance next to Botanica Deli. You can run if you wish, I just not sure why you want to act busy when your boss is not around.'
       photo: './16-entrance-to-building.jpg'
-    - description: 'Once you enter the building, turn right and walk along the curved walkway. If you not sure what I mean by curved walkway, just follow the crowd. That''s how you deal with unknown in your life anyway.'
+    - description: "Once you enter the building, turn right and walk along the curved walkway. If you not sure what I mean by curved walkway, just follow the crowd. That's how you deal with unknown in your life anyway."
       photo: './17-turn-right-after-enter.jpg'
     - description: 'At the end of the the walkway, you will see Tower B entrance on your left. If not, show this photo to the hot guy/gal walking pass. I just give you a pickup line, thanks me later.'
       photo: './18-tower-b-entrance.jpg'
-    - description: 'Go into the glass door and register yourself at the reception. It''s at Level 12.'
+    - description: "Go into the glass door and register yourself at the reception. It's at Level 12."
+      photo: './19-reception.jpg'
+
+  grab:
+    - description: 'Grab here by asking your driver to search for "The Vertical Office Suites" or use the Google Map URL above.'
+    - description: "This is where the driver should drop-off you. If he/she didn't, give him 3 stars."
+      photo: './100-drop-off.jpg'
+    - description: 'This is what you should see across the street. If the driver drop-off you on that side, give him 1 star.'
+      photo: './101-across-street.jpg'
+    - description: 'Tower B is just in front of you! Walk towards the entrance.'
+      photo: './102-drop-off-and-approach-entrance.jpg'
+    - description: 'Tower B entrance.'
+      photo: './18-tower-b-entrance.jpg'
+    - description: "Go into the glass door and register yourself at the reception. It's at Level 12."
       photo: './19-reception.jpg'

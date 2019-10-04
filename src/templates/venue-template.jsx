@@ -44,10 +44,28 @@ const VenueTemplate = ({ data: { details } }) => {
           )}
           {details.driving && (
             <Accordion
-              summary={<h3>Driving There or Grab</h3>}
+              summary={<h3>Driving There</h3>}
               details={
                 <GridList>
                   {details.driving.map((step, index) => (
+                    <GridItem key={index}>
+                      <Step
+                        stepNumber={index + 1}
+                        description={step.description}
+                        photo={step.photo}
+                      />
+                    </GridItem>
+                  ))}
+                </GridList>
+              }
+            />
+          )}
+          {details.grab && (
+            <Accordion
+              summary={<h3>Grab There</h3>}
+              details={
+                <GridList>
+                  {details.grab.map((step, index) => (
                     <GridItem key={index}>
                       <Step
                         stepNumber={index + 1}
@@ -85,6 +103,17 @@ export const pageQuery = graphql`
         }
       }
       driving {
+        description
+        photo {
+          name
+          childImageSharp {
+            fluid(maxWidth: 510) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+      grab {
         description
         photo {
           name
