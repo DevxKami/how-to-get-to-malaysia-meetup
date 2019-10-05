@@ -1,0 +1,61 @@
+- id: supahands
+  name: Supahands
+  googleMapUrl: https://goo.gl/maps/jWiuTGMpfbp8LtNC7
+  lrt: # Since it is at Bangsar South, we will just copy most from the directions to Fave
+    - description: 'Once you exit the Kerinchi LRT gate, turn left.'
+      photo: '../fave/01-exit-lrt.jpg'
+    - description: 'Go into the walkway and turn right at the end.'
+      photo: '../fave/02-corridor-after-lrt-exit.jpg'
+    - description: 'When you turn right, you will see a pedestrian bridge. Use that pedestrian bridge.'
+      photo: '../fave/03-turn-right-after-corridor-to-see-pedestrian-bridge.jpg'
+    - description: 'Continue straight.'
+      photo: '../fave/04-go-towards-bangsar-south-via-pedestrian-bridge.jpg'
+    - description: 'You are on right track if you see this sign. Continue straight.'
+      photo: '../fave/04a-confirm-direction.jpg'
+    - description: 'At the end of the pedestrian bridge, you will see an escalator on your left side. Take that escalator.'
+      photo: '../fave/05-turn-right-to-escalator-at-the-end-of-pedestrian-bridge.jpg'
+    - description: 'Once you exit the escalator, on your right hand side is another escalator. Take the escalator.'
+      photo: '../fave/06-after-escalator-turn-right-and-take-escalator-on-right.jpg'
+    - description: 'Once you exit this escalator, you will see a fountain in front of you. Go towards the fountain.'
+      photo: '../fave/07-go-straight-and-pass-through-fountain.jpg'
+    - description: 'Walk pass the fountain or jump across it if you can. 10 points for Gryffindor if you jump across it successfully.'
+      photo: '../fave/07a-closer-look-at-fountain.jpg'
+    - description: "Stop at first road after the fountain. Touch N' Go office is on your right hand side (not in photo)."
+      photo: '../fave/08-after-fountain-stop-at-first-road.jpg'
+    - description: 'You will see MyNews across the road. March on, soldier!'
+      photo: '../fave/08a-see-mynews-at-turn-right.jpg'
+    - description: "You should NOT see this scene. I know you're excited to get ice-cream from Family Mart, but you had miss the turning. U-turn please."
+      photo: '../fave/08b-uturn-if-you-see-family-mart.jpg'
+    - description: 'If you see this "Tower 5" signboard of your left side, you''re on the right track.'
+      photo: '../fave/10-pass-through-tower-5-on-right-while-walking.jpg'
+    - description: 'At the end of the road, you will see a little stairway. Take that stairway.'
+      photo: './11-see-small-path-at-the-end-of-road.jpg'
+    - description: 'This is how it looks like when you taking the stair, but the guy is probably not there. If you see him, tell him he is famous now.'
+      photo: '../fave/12-taking-the-small-path.jpg'
+    - description: 'At the end of the path, you will see a small pond.'
+      photo: '../fave/13-see-the-lake-after-go-up-small-path.jpg'
+    - description: "Turning slightly anticlockwise, you will see where you want to go across the lake. Walk around the lake. Don't jump into the lake unless you want to attract the attention of the good-looking guy/gal that is passing by."
+      photo: './14-see-target-across-lake.jpg'
+    - description: 'When you approaches the building, a roundabout will be in front the entrance. Go towards the entrance next to Botanica Deli.'
+      photo: './15-approaching-building.jpg'
+    - description: 'Walk through the entrance next to Botanica Deli. You can run if you wish, I just not sure why you want to act busy when your boss is not around.'
+      photo: './16-entrance-to-building.jpg'
+    - description: "Once you enter the building, turn right and walk along the curved walkway. If you not sure what I mean by curved walkway, just follow the crowd. That's how you deal with unknown in your life anyway."
+      photo: './17-turn-right-after-enter.jpg'
+    - description: 'At the end of the the walkway, you will see Tower B entrance on your left. If not, show this photo to the hot guy/gal walking pass. I just give you a pickup line, thanks me later.'
+      photo: './18-tower-b-entrance.jpg'
+    - description: "Go into the glass door and register yourself at the reception. It's at Level 12."
+      photo: './19-reception.jpg'
+
+  grab:
+    - description: 'Grab here by asking your driver to search for "The Vertical Office Suites" or use the Google Map URL above.'
+    - description: "This is where the driver should drop-off you. If he/she didn't, give him 3 stars."
+      photo: './100-drop-off.jpg'
+    - description: 'This is what you should see across the street. If the driver drop-off you on that side, give him 1 star.'
+      photo: './101-across-street.jpg'
+    - description: 'Tower B is just in front of you! Walk towards the entrance.'
+      photo: './102-drop-off-and-approach-entrance.jpg'
+    - description: 'Tower B entrance.'
+      photo: './18-tower-b-entrance.jpg'
+    - description: "Go into the glass door and register yourself at the reception. It's at Level 12."
+      photo: './19-reception.jpg'
