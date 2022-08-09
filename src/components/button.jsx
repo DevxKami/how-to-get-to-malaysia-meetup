@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
+import * as React from 'react';
 
 export const Button = ({
   disabled,
@@ -11,28 +10,6 @@ export const Button = ({
     type={type}
     disabled={disabled}
     {...props}
-    sx={{
-      cursor: disabled ? 'default' : 'pointer',
-      display: 'inline-block',
-      textDecoration: 'none',
-      whiteSpace: 'nowrap',
-      flex: 'none',
-      fontWeight: 'bold',
-      minWidth: '64px',
-      px: 3,
-      py: 2,
-      border: 0,
-      color: disabled ? 'text' : 'background',
-      bg: disabled ? 'background' : 'primary',
-      borderRadius: 4,
-      '&:hover': disabled
-        ? {
-            color: 'text',
-          }
-        : {
-            color: 'background',
-            bg: 'secondary',
-          },
-    }}
+    className={`inline-block flex-none min-w-[72px] px-3 py-2 rounded font-bold whitespace-nowrap text-white bg-sky-600 hover:bg-sky-800`}
   />
 );

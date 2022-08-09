@@ -1,6 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import * as React from 'react';
 
 export const Seo = ({ title, description, pathname, keywords }) => {
   const {
@@ -32,7 +31,8 @@ export const Seo = ({ title, description, pathname, keywords }) => {
   };
 
   return (
-    <Helmet title={seo.title}>
+    <>
+      <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="keywords" content={seo.keywords} />
       <meta property="og:url" content={seo.url} />
@@ -45,6 +45,6 @@ export const Seo = ({ title, description, pathname, keywords }) => {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       {/* <meta name="twitter:image" content={seo.image} /> */}
-    </Helmet>
+    </>
   );
 };

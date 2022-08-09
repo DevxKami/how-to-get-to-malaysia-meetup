@@ -1,32 +1,29 @@
 import { graphql } from 'gatsby';
-import React from 'react';
-import { Container, Styled } from 'theme-ui';
+import * as React from 'react';
 import { Accordion } from '../components/accordion';
+import { Container } from '../components/container';
+import { GridItem, GridList } from '../components/grid';
 import { Layout } from '../components/layout';
-import { GridList, GridItem } from '../components/grid';
 import { Seo } from '../components/seo';
 import { Step } from '../components/step';
 
 const VenueTemplate = ({ data: { details } }) => {
   return (
-    <>
-      <Seo
-        title={`Getting To ${details.name}`}
-        description={`Detailed instructions getting to ${details.name}`}
-        keywords={[details.name, 'detailed instructions']}
-      />
-      <Layout>
-        <Container>
-          <h1>Getting To {details.name}</h1>
-          {details.googleMapUrl && (
-            <p>
-              <Styled.a href={details.googleMapUrl}>Google Map</Styled.a>
-            </p>
-          )}
-          <h2>Detailed Instructions</h2>
+    <Layout>
+      <Container>
+        <h1 className="text-5xl font-bold mb-12">Getting To {details.name}</h1>
+        {details.googleMapUrl && (
+          <p className="mb-6">
+            <a href={details.googleMapUrl} className="text-blue-800 underline">
+              Google Map
+            </a>
+          </p>
+        )}
+        <h2 className="text-3xl text-gray-600">Detailed Instructions</h2>
+        <div className="flex flex-col gap-3 py-6">
           {details.lrt && (
             <Accordion
-              summary={<h3>By LRT</h3>}
+              summary={<h3 className="text-xl">By LRT</h3>}
               details={
                 <GridList>
                   {details.lrt.map((step, index) => (
@@ -44,7 +41,7 @@ const VenueTemplate = ({ data: { details } }) => {
           )}
           {details.driving && (
             <Accordion
-              summary={<h3>Driving There</h3>}
+              summary={<h3 className="text-xl">Driving There</h3>}
               details={
                 <GridList>
                   {details.driving.map((step, index) => (
@@ -62,7 +59,7 @@ const VenueTemplate = ({ data: { details } }) => {
           )}
           {details.grab && (
             <Accordion
-              summary={<h3>Grab There</h3>}
+              summary={<h3 className="text-xl">Grab There</h3>}
               details={
                 <GridList>
                   {details.grab.map((step, index) => (
@@ -78,9 +75,9 @@ const VenueTemplate = ({ data: { details } }) => {
               }
             />
           )}
-        </Container>
-      </Layout>
-    </>
+        </div>
+      </Container>
+    </Layout>
   );
 };
 
@@ -127,3 +124,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ data: { details } }) => (
+  <Seo
+    title={`Getting To ${details.name}`}
+    description={`Detailed instructions getting to ${details.name}`}
+    keywords={[details.name, 'detailed instructions']}
+  />
+);

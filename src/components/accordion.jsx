@@ -1,37 +1,23 @@
-/** @jsx jsx */
-import { useState, useLayoutEffect } from 'react';
-import { jsx } from 'theme-ui';
+import * as React from 'react';
 import { Button } from './button';
 
 export const Accordion = ({ summary, details }) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = React.useState(true);
 
-  useLayoutEffect(() => {
+  React.useLayoutEffect(() => {
     setShow(false);
   }, []);
 
   return (
     <div>
       {summary && (
-        <div
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}
-        >
+        <div className="flex justify-between items-center py-3">
           {summary}
-          <Button onClick={() => setShow(prevShow => !prevShow)}>{show ? 'Hide' : 'Show'}</Button>
+          <Button onClick={() => setShow((prevShow) => !prevShow)}>{show ? 'Hide' : 'Show'}</Button>
         </div>
       )}
       {details && (
-        <div
-          aria-hidden={!show}
-          sx={{
-            height: show ? 'auto' : 0,
-            overflow: 'hidden',
-          }}
-        >
+        <div aria-hidden={!show} className={`overflow-hidden ${show ? 'h-auto' : 'h-0'}`}>
           {details}
         </div>
       )}

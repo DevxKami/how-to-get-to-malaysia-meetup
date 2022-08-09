@@ -1,0 +1,30 @@
+- id: aa-tower
+  name: Menara AA
+  googleMapUrl: https://goo.gl/maps/dDAeFEmUBCcufPqS7
+  lrt:
+    - description: '"Next station, TRX. Stesen berikutnya, TRX". You can get down here.'
+      photo: './01-min.jpg'
+    - description: After you've tapped out of the station, look for Pintu A | Jalan Delima.
+      photo: './02-min.jpg'
+    - description: This looks right. Go straight and turn right.
+      photo: './03-min.jpg'
+    - description: Just keep swimming...
+      photo: './04-min.jpg'
+    - description: There's construction around the area. Turn right under the sheltered path.
+      photo: './05-min.jpg'
+    - description: Walk along the roadside to the next intersection.
+      photo: './06-min.jpg'
+    - description: Turn right at Menara Technip.
+      photo: './07-min.jpg'
+    - description: Literally this right.
+      photo: './08-min.jpg'
+    - description: And walk to the end.
+      photo: './09-min.jpg'
+    - description: More pics for deco. If this is not your view, you're probably lost.
+      photo: './10-min.jpg'
+    - description: Take another right, almost there.
+      photo: './11-min.jpg'
+    - description: And under this bridge.
+      photo: './12-min.jpg'
+    - description: Ok, thank Waze for getting you here cause this clearly wasn't helpful.
+      photo: './13-min.jpg'
