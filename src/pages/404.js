@@ -1,22 +1,20 @@
-import React from 'react';
-import { Container, Styled } from 'theme-ui';
+import * as React from 'react';
+import { Container } from '../components/container';
 import { Layout } from '../components/layout';
 import { Seo } from '../components/seo';
 
 function PageNotFound() {
   return (
-    <>
-      <Seo title="Page Not Found" />
-      <Layout>
-        <Container>
-          <Styled.h2 as="h1">Page Not Found</Styled.h2>
-          <Styled.p />
-          <Styled.p>A 404, if you speak Http.</Styled.p>
-          <Styled.p>This is probably our fault, we're sorry.</Styled.p>
-        </Container>
-      </Layout>
-    </>
+    <Layout>
+      <Container>
+        <h1 className="text-5xl font-bold mb-12">Page Not Found</h1>
+        <p className="mb-6">A 404, if you speak Http.</p>
+        <p>This is probably our fault, we're sorry.</p>
+      </Container>
+    </Layout>
   );
 }
 
 export default PageNotFound;
+
+export const Head = () => <Seo title="Page Not Found" />;

@@ -9,6 +9,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allDetailsYaml {
         nodes {
           id
+          yamlId
         }
       }
     }
@@ -21,9 +22,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const venues = result.data.allDetailsYaml.nodes;
 
-  venues.forEach(venue => {
+  venues.forEach((venue) => {
     createPage({
-      path: `/getting-to/${venue.id}/`,
+      path: `/getting-to/${venue.yamlId}/`,
       component: venueTemplate,
       context: {
         id: venue.id,

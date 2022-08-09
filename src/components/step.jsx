@@ -1,39 +1,17 @@
-/** @jsx jsx */
 import Image from 'gatsby-image';
-import { jsx } from 'theme-ui';
+import * as React from 'react';
 
 export const Step = ({ stepNumber, description, photo }) => {
   return (
-    <section
-      sx={{
-        position: 'relative',
-      }}
-    >
-      <span
-        sx={{
-          position: 'absolute',
-          left: 0,
-          top: 0,
-          borderRadius: '50%',
-          backgroundColor: 'primary',
-          color: 'background',
-          width: '24px',
-          height: '24px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        {stepNumber}
-      </span>
-      <p
-        sx={{
-          pl: '28px',
-        }}
-      >
+    <section className="h-full flex flex-col gap-3 justify-end">
+      {photo && <Image fluid={photo.childImageSharp.fluid} alt="" />}
+      <p className="pl-7 relative min-h-[100px]">
+        <span className="absolute left-0 top-0 rounded-full bg-blue-500 text-white h-6 w-6 flex items-center justify-center">
+          {stepNumber}
+        </span>
+
         {description}
       </p>
-      {photo && <Image fluid={photo.childImageSharp.fluid} alt="" />}
     </section>
   );
 };

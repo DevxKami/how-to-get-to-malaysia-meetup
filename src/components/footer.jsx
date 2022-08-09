@@ -1,25 +1,20 @@
-/** @jsx jsx */
-import { Container, jsx } from 'theme-ui';
-import { useSiteMetadata } from '../hooks/use-site-metadata';
-import { NavLink } from './nav-link';
-import { GridItem, GridList } from './grid';
 import { Link } from 'gatsby';
+import * as React from 'react';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 export const Footer = () => {
   const metadata = useSiteMetadata();
 
   return (
-    <Container sx={{ py: 1 }}>
-      <GridList>
-        <GridItem>
-          <NavLink as={Link} to="/disclaimer/">
-            Disclaimer
-          </NavLink>
-        </GridItem>
-        <GridItem>
-          <NavLink href={metadata.repositoryUrl}>GitHub</NavLink>
-        </GridItem>
-      </GridList>
-    </Container>
+    <footer className="p-12 border-t border-gray-200">
+      <div className="flex gap-6">
+        <Link to="/disclaimer/" className="text-sm">
+          Disclaimer
+        </Link>
+        <a href={metadata.repositoryUrl} className="text-sm">
+          GitHub
+        </a>
+      </div>
+    </footer>
   );
 };

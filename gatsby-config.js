@@ -10,8 +10,6 @@ module.exports = {
     repositoryUrl: packageJson.repository.url,
   },
   plugins: [
-    `gatsby-plugin-theme-ui`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -22,5 +20,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-yaml`,
+    'gatsby-plugin-postcss',
   ],
 };

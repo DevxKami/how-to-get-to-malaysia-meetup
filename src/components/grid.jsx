@@ -1,18 +1,13 @@
-/** @jsx jsx */
-import { jsx, Styled } from 'theme-ui';
+import * as React from 'react';
 
-export const GridList = props => (
-  <Styled.ul
+export const GridList = (props) => (
+  <ul
     {...props}
-    sx={{
-      listStyle: 'none',
-      p: 0,
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-      columnGap: [2, 3],
-      rowGap: [3, 3, 4],
+    className="grid gap-2 sm:gap-3 lg:gap-5 lg:gap-y-12"
+    style={{
+      gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))',
     }}
   />
 );
 
-export const GridItem = props => <Styled.li {...props} />;
+export const GridItem = (props) => <li {...props} />;
